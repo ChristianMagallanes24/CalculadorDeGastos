@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Calculador de Gastos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1 class="titulo">Calculador de gastos y ahorros</h1>
+    <div class="calculador-container">
+        <div class="lista">
+            <input class="input-salario" type="text" placeholder="ingresar salario mensual">
+            <p>Salario: <span id="salario-valor">0</span></p>
+            <div class="agregar-container">
+                <input class="input-gasto" type="text" placeholder="gasto">
+                <input class="input-valor" type="text" placeholder="$">
+                <button  class="agregar-btn">Agregar</button>
+            </div>
+            <div id="gastos"></div>
+           <div class="botones">
+            <button class="btn" id="calcular-btn">Calcular</button>
+            <button class="btn" id="limpiar-btn">Limpiar</button> <!-- Botón para limpiar -->
+           </div>
+            <p>Total Gastos: <span id="total-gastos">0</span></p>
+        </div>
+        <div id="grafica">
+            <canvas id="gastosChart"></canvas>
+        </div>
+        <p>Programa creado por: Christian Magallanes</p>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
